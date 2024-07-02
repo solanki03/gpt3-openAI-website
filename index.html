@@ -12,48 +12,73 @@
     <title>GPT3 OpenAI</title>
   </head>
   <body>
-    <!-- Navigation bar start -->
-    <!-- Mobile version start-->
-    <nav
-      class="text-white h-11 p-6 flex sticky top-0 justify-between items-center bg-gradient-to-r from-[#002853] to-[#040C18] to-97%"
-    >
-      <div class="text-xl font-bold">GPT-3</div>
-      <div class="text-xl">
-        <i class="ri-menu-line"></i>
-      </div>
-    </nav>
-    <!-- Mobile version end -->
-    <!-- Navigation bar end -->
-
     <main class="bg-gradient-to-br from-[#002853] to-[#040C18] to-45%">
+      <!-- Navigation bar start -->
+      <nav
+        class="text-white h-11 p-6 flex sticky top-0 bg-[#00000019] backdrop-blur-2xl justify-between items-center xl:justify-around lg:h-16"
+      >
+        <h1 class="text-xl font-bold">GPT-3</h1>
+        <div
+          class="text-xl lg:text-base lg:flex lg:flex-row lg:gap-14 xl:gap-36 lg:items-center"
+        >
+          <i class="ri-menu-line lg:hidden"></i>
+
+          <!-- Desktop version start -->
+          <ul class="lg:flex lg:flex-row lg:gap-14 hidden lg:text-start">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_gpt">What is GPT?</a></li>
+            <li><a href="#openai">Open AI</a></li>
+            <li><a href="#case_studies">Case Studies</a></li>
+            <li><a href="#library">Library</a></li>
+          </ul>
+
+          <div class="hidden lg:block lg:text-start">
+            <button type="button" class="lg:w-[130px] lg:h-12">Sign in</button>
+            <button
+              type="button"
+              class="lg:w-[130px] lg:h-12 lg:bg-[#FF4820] rounded-md"
+            >
+              Sign up
+            </button>
+          </div>
+          <!-- Desktop version end -->
+        </div>
+      </nav>
+      <!-- Navigation bar end -->
+
       <!-- hero section start -->
-      <section class="md:flex flex-row py-10">
+      <section class="md:flex flex-row py-10 xl:pt-0" id="home">
         <!-- hero information section starts -->
-        <div class="pb-5 pl-9 pt-7 xl:pl-28">
+        <div class="pb-5 pl-9 pt-7 xl:pl-28 xl:pt-5">
           <h1
             class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text text-[28px] font-extrabold mb-5 md:text-2xl xl:text-3xl"
           >
             Let’s Build Something <br />amazing with GPT-3 <br />OpenAI
           </h1>
-          <p class="text-[#81AFDD] text-sm text-wrap w-72 mb-5 md:w-96 xl:text-lg xl:w-[550px]">
+          <p
+            class="text-[#81AFDD] text-sm text-wrap w-72 mb-5 md:w-96 xl:text-lg xl:w-[550px]"
+          >
             Yet bed any for travelling assistance indulgence unpleasing. Not
             thoughts all exercise blessing. Indulgence way everything joy
             alteration boisterous the attachment. Party we years to order allow
             asked of.
           </p>
-          <form action="" class="mb-4 w-[180px] h-12 text-sm flex flex-row">
+          <form
+            action=""
+            class="mb-4 h-12 text-sm flex flex-row xl:text-lg xl:w-auto"
+          >
             <input
               type="email"
               placeholder="Your Email Address"
-              class="text-[#3D6184] bg-[#052D56] pl-5 py-3 w-48"
+              class="text-[#3D6184] bg-[#052D56] pl-5 py-3 xl:w-80 xl:pl-8 xl:py-6 xl:h-[73px]"
             />
             <input
               type="submit"
               value="Get Started"
-              class="text-white bg-[#FF4820] pl-4 py-3 pr-3 cursor-pointer"
+              class="text-white bg-[#FF4820] pl-4 py-3 pr-3 cursor-pointer xl:pl-8 xl:pt-5 xl:pr-6 xl:pb-6 xl:w-[160px] xl:h-[73px] xl:rounded-r-lg"
             />
           </form>
-          <div class="md:flex ">
+          <div class="md:flex xl:mt-10">
             <img
               src="/Group.png"
               alt="This is a collection of demo profile icon images."
@@ -67,7 +92,9 @@
         <!-- hero information section ends -->
 
         <!-- hero image section starts -->
-        <div class="w-80 my-5 mx-auto xl:pr-28 xl:w-[700px] xl:my-auto">
+        <div
+          class="w-80 my-5 mx-auto xl:pr-28 lg:max-w-[700px] lg:my-auto xl:w-[700px]"
+        >
           <img
             src="/Header_Illustration.png"
             alt="This is an illustration of a face."
@@ -78,30 +105,32 @@
       <!-- hero section end -->
 
       <!-- brand logo area start -->
-      <section class="h-18 flex gap-4 items-center my-2 mx-4 md:gap-10 md:mx-40 md:mb-16 xl:mt-16 xl:mb-24">
-        <div class="place-content-center min-w-[2.5rem] bg-center">
+      <section
+        class="h-18 flex gap-4 items-center my-2 mx-4 md:gap-10 md:mx-40 md:mb-16 xl:mt-16 xl:mb-24 xl:justify-center"
+      >
+        <div class="place-content-center min-w-[2.5rem] bg-center xl:w-20">
           <img src="/brands/google.png" alt="This is 'Google' brand's logo." />
         </div>
 
-        <div class="place-content-center min-w-[2.5rem] bg-center">
+        <div class="place-content-center min-w-[2.5rem] bg-center xl:w-20">
           <img src="/brands/slack.png" alt="This is 'slack' brand's logo." />
         </div>
 
-        <div class="place-content-center min-w-[2.5rem] bg-center">
+        <div class="place-content-center min-w-[2.5rem] bg-center xl:w-20">
           <img
             src="/brands/atlassian.png"
             alt="This is 'Atlassian' brand's logo."
           />
         </div>
 
-        <div class="place-content-center min-w-[2.5rem] bg-center">
+        <div class="place-content-center min-w-[2.5rem] bg-center xl:w-20">
           <img
             src="/brands/dropbox.png"
             alt="This is 'Dropbox' brand's logo."
           />
         </div>
 
-        <div class="place-content-center min-w-[2.5rem] bg-center">
+        <div class="place-content-center min-w-[2.5rem] bg-center xl:w-20">
           <img
             src="/brands/shopify.png"
             alt="This is 'shopiify' brand's logo."
@@ -111,18 +140,24 @@
       <!-- brand logo area end -->
 
       <!-- GPT-3 information area start -->
-      <section>
+      <section id="about_gpt">
         <!-- card main body -->
         <div
-          class="mx-10 my-6 p-8 bg-gradient-to-br from-[#0F4279] via-[#042C54] to-[#1B78DE] xl:mx-28"
+          class="mx-10 my-6 p-8 bg-gradient-to-br from-[#0F4279] via-[#042C54] to-[#1B78DE] xl:mx-28 xl:pt-12 xl:px-10"
         >
           <!-- top elements start -->
           <div
             class="h-1 w-[60px] mb-3 bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-97%"
           ></div>
-          <div class="md:flex md:flex-row md:gap-20 xl:justify-between">
-            <h1 class="text-white text-md font-bold mb-5 md:text-xl md:min-w-max">What is GPT-3</h1>
-            <p class="text-[#81AFDD] text-sm md:min-w-60 md:mb-5 xl:text-base xl:w-[700px]">
+          <div class="md:flex md:flex-row md:gap-20 lg:justify-between">
+            <h1
+              class="text-white text-md font-bold mb-5 md:text-xl md:min-w-max"
+            >
+              What is GPT-3
+            </h1>
+            <p
+              class="text-[#81AFDD] text-sm md:min-w-60 md:mb-5 xl:text-base lg:w-[700px]"
+            >
               We so opinion friends me message as delight. Whole front do of
               plate heard oh ought. His defective nor convinced residence own.
               Connection has put impossible own apartments boisterous. At
@@ -160,7 +195,9 @@
                 class="h-1 w-[60px] mt-7 bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-97%"
               ></div>
               <div>
-                <h1 class="text-white text-md font-bold mb-5 md:text-xl">Chatbots</h1>
+                <h1 class="text-white text-md font-bold mb-5 md:text-xl">
+                  Chatbots
+                </h1>
                 <p class="text-[#81AFDD] text-sm mb-4 md:min-w-[180px]">
                   We so opinion friends me message as delight. Whole front do of
                   plate heard oh ought.
@@ -175,7 +212,9 @@
                 class="h-1 w-[60px] mt-7 bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-97%"
               ></div>
               <div>
-                <h1 class="text-white text-md font-bold mb-5 md:text-xl">Knowledgebase</h1>
+                <h1 class="text-white text-md font-bold mb-5 md:text-xl">
+                  Knowledgebase
+                </h1>
                 <p class="text-[#81AFDD] text-sm md:min-w-[180px]">
                   At jointure ladyship an insisted so humanity he. Friendly
                   bachelor entrance to on by. As put impossible own apartments
@@ -191,7 +230,9 @@
                 class="h-1 w-[60px] mt-7 bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-97%"
               ></div>
               <div>
-                <h1 class="text-white text-md font-bold mb-5 md:text-xl">Education</h1>
+                <h1 class="text-white text-md font-bold mb-5 md:text-xl">
+                  Education
+                </h1>
                 <p class="text-[#81AFDD] text-sm md:min-w-[180px]">
                   At jointure ladyship an insisted so humanity he. Friendly
                   bachelor entrance to on by. As put impossible own apartments
@@ -208,7 +249,9 @@
 
       <!-- Early Access area stat -->
       <section>
-        <div class="mx-10 my-10 xl:mx-28 xl:flex xl:flex-row xl:justify-between">
+        <div
+          class="mx-10 my-10 xl:mx-28 lg:flex lg:flex-row lg:justify-between"
+        >
           <!-- left part start -->
           <div>
             <h1
@@ -237,7 +280,9 @@
                 </h1>
               </div>
               <!-- right side paragraph -->
-              <p class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto xl:w-[320px]">
+              <p
+                class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto lg:max-w-[320px]"
+              >
                 From they fine john he give of rich he. They age and draw mrs
                 like. Improving end distrusts may instantly was household
                 applauded.
@@ -257,7 +302,9 @@
                 </h1>
               </div>
               <!-- right side paragraph -->
-              <p class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto xl:w-[320px]">
+              <p
+                class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto lg:max-w-[320px]"
+              >
                 Considered sympathize ten uncommonly occasional assistance
                 sufficient not. Letter of on become he tended active enable to.
               </p>
@@ -276,7 +323,9 @@
                 </h1>
               </div>
               <!-- right side paragraph -->
-              <p class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto xl:w-[320px]">
+              <p
+                class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto lg:max-w-[320px]"
+              >
                 Led ask possible mistress relation elegance eat likewise
                 debating. By message or am nothing amongst chiefly address.
               </p>
@@ -295,7 +344,9 @@
                 </h1>
               </div>
               <!-- right side paragraph -->
-              <p class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto xl:w-[320px]">
+              <p
+                class="text-[#81AFDD] text-esm md:min-w-44 md:my-auto lg:max-w-[320px]"
+              >
                 Really boy law county she unable her sister. Feet you off its
                 like like six. Among sex are leave law built now. In built table
                 in an rapid blush.
@@ -310,10 +361,16 @@
 
       <!-- Possibility area start -->
       <section>
-        <div class="mx-10 my-10 lg:flex lg:flex-row lg:justify-around xl:mx-28 xl:mb-28">
+        <div
+          class="mx-10 my-10 lg:flex lg:flex-row lg:justify-around xl:mx-28 xl:mb-28"
+        >
           <!-- left side -->
           <div class="">
-            <img src="/Feature_Image.png" alt="A women using AR-VR glasses." class="md:w-[450px] md:h-[500px]"/>
+            <img
+              src="/Feature_Image.png"
+              alt="A women using AR-VR glasses."
+              class="md:w-[450px] md:h-[500px]"
+            />
           </div>
 
           <!-- right side -->
@@ -341,203 +398,200 @@
       <!-- Possibility area end -->
 
       <!-- Registration area start -->
-       <section>
-        <div class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-90% mx-10 my-10 rounded-lg py-10 px-7 flex flex-col items-center md:flex-row md:justify-between xl:mx-28">
+      <section>
+        <div
+          class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-90% mx-10 my-10 rounded-lg py-10 px-7 flex flex-col items-center md:flex-row md:justify-between xl:mx-28"
+        >
           <!-- left side -->
           <div class="text-black">
-            <p class="text-esm">
-              Request Early Access to Get Started
-            </p>
+            <p class="text-esm">Request Early Access to Get Started</p>
             <h1 class="text-lg font-semibold mt-3 mb-5">
               Register today & start exploring the endless possiblities.
             </h1>
           </div>
 
           <!-- right side -->
-           <button type="button" class="text-white text-base bg-black px-5 py-2 rounded-3xl">
+          <button
+            type="button"
+            class="text-white text-base bg-black px-5 py-2 rounded-3xl"
+          >
             Get Started
-           </button>
+          </button>
         </div>
-       </section>
+      </section>
       <!-- Registration area end -->
 
       <!-- Blogging area start -->
-       <section class="pt-10 px-10 pb-24 xl:px-28">
+      <section class="pt-10 px-10 pb-24 xl:px-28">
         <!-- heading part -->
-         <h1 class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text text-[22px] font-extrabold mb-14 md:text-2xl xl:text-3xl">
-          A lot is happening, <br>We are blogging about it.
-         </h1>
+        <h1
+          class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text text-[22px] font-extrabold mb-14 md:text-2xl xl:text-3xl"
+        >
+          A lot is happening, <br />We are blogging about it.
+        </h1>
 
         <!-- blogs part -->
-          <!-- bottom mentioned div will contain all the blog cards, apply grid -->
-        <div class="text-white grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-10 place-items-center">
+        <!-- bottom mentioned div will contain all the blog cards -->
+        <div
+          class="text-white grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-10 place-items-center"
+        >
           <!-- 1st card start -->
-           <div class="md:row-span-2 md:w-56 lg:w-[420px]">
-            <img src="/articles/img1.png" alt="">
+          <div class="md:row-span-2 md:w-56 lg:w-[300px] xl:w-[420px]">
+            <img src="/articles/img1.png" alt="" />
             <!-- bottom part -->
-            <div class="bg-[#042C54] py-5 px-4 md:h-[455px] md:flex md:flex-col justify-between lg:h-[380px]">
+            <div
+              class="bg-[#042C54] py-5 px-4 md:h-[455px] md:flex md:flex-col justify-between lg:h-[490px] xl:h-[380px]"
+            >
               <div>
-                <p class="text-esm mb-2">
-                  Sep 26,2021
-                </p>
+                <p class="text-esm mb-2">Sep 26,2021</p>
                 <h1 class="text-base font-bold mb-10 lg:text-[25px]">
-                  GPT-3 and Open  AI is the future. Let us exlore how it is?
+                  GPT-3 and Open AI is the future. Let us exlore how it is?
                 </h1>
               </div>
-              <p class="text-esm">
-                Read Full Article
-              </p>
+              <p class="text-esm">Read Full Article</p>
             </div>
-           </div>
+          </div>
           <!-- 1st card end -->
 
           <!-- 2nd card start -->
-          <div class="md:w-56 lg:w-[330px]">
-            <img src="/articles/img2.png" alt="">
+          <div class="md:w-56 lg:w-[270px] xl:w-[330px]">
+            <img src="/articles/img2.png" alt="" />
             <!-- bottom part -->
             <div class="bg-[#042C54] py-5 px-4">
-              <p class="text-esm mb-2">
-                Sep 26,2021
-              </p>
+              <p class="text-esm mb-2">Sep 26,2021</p>
               <h1 class="text-base font-bold mb-10 lg:text-lg">
-                GPT-3 and Open  AI is the future. Let us exlore how it is?
+                GPT-3 and Open AI is the future. Let us exlore how it is?
               </h1>
-              <p class="text-esm">
-                Read Full Article
-              </p>
+              <p class="text-esm">Read Full Article</p>
             </div>
-           </div>
+          </div>
           <!-- 2nd card end -->
 
           <!-- 3rd card start -->
-          <div class="md:w-56  lg:w-[330px]">
-            <img src="/articles/img3.png" alt="">
+          <div class="md:w-56 lg:w-[270px] xl:w-[330px]">
+            <img src="/articles/img3.png" alt="" />
             <!-- bottom part -->
             <div class="bg-[#042C54] py-5 px-4">
-              <p class="text-esm mb-2">
-                Sep 26,2021
-              </p>
+              <p class="text-esm mb-2">Sep 26,2021</p>
               <h1 class="text-base font-bold mb-10 lg:text-lg">
-                GPT-3 and Open  AI is the future. Let us exlore how it is?
+                GPT-3 and Open AI is the future. Let us exlore how it is?
               </h1>
-              <p class="text-esm">
-                Read Full Article
-              </p>
+              <p class="text-esm">Read Full Article</p>
             </div>
-           </div>
+          </div>
           <!-- 3rd card end -->
 
           <!-- 4th card start -->
-          <div class="md:w-56  lg:w-[330px]">
-            <img src="/articles/img4.png" alt="">
+          <div class="md:w-56 lg:w-[270px] xl:w-[330px]">
+            <img src="/articles/img4.png" alt="" />
             <!-- bottom part -->
             <div class="bg-[#042C54] py-5 px-4">
-              <p class="text-esm mb-2">
-                Sep 26,2021
-              </p>
+              <p class="text-esm mb-2">Sep 26,2021</p>
               <h1 class="text-base font-bold mb-10 lg:text-lg">
-                GPT-3 and Open  AI is the future. Let us exlore how it is?
+                GPT-3 and Open AI is the future. Let us exlore how it is?
               </h1>
-              <p class="text-esm">
-                Read Full Article
-              </p>
+              <p class="text-esm">Read Full Article</p>
             </div>
-           </div>
+          </div>
           <!-- 4th card end -->
 
           <!-- 5th card start -->
-          <div class="md:w-56  lg:w-[330px]">
-            <img src="/articles/img5.png" alt="">
+          <div class="md:w-56 lg:w-[270px] xl:w-[330px]">
+            <img src="/articles/img5.png" alt="" />
             <!-- bottom part -->
             <div class="bg-[#042C54] py-5 px-4">
-              <p class="text-esm mb-2">
-                Sep 26,2021
-              </p>
+              <p class="text-esm mb-2">Sep 26,2021</p>
               <h1 class="text-base font-bold mb-10 lg:text-lg">
-                GPT-3 and Open  AI is the future. Let us exlore how it is?
+                GPT-3 and Open AI is the future. Let us exlore how it is?
               </h1>
-              <p class="text-esm">
-                Read Full Article
-              </p>
+              <p class="text-esm">Read Full Article</p>
             </div>
-           </div>
+          </div>
           <!-- 5th card end -->
         </div>
-       </section>
+      </section>
       <!-- Blogging area end -->
 
       <!-- Early access area start -->
-       <section class="px-10 py-10 bg-[#031B34]">
+      <section class="px-10 py-10 bg-[#031B34]">
         <div class="flex flex-col items-center">
           <!-- Mobile version -->
-          <h1 class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text text-[22px] font-extrabold md:hidden">
+          <h1
+            class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text text-[22px] font-extrabold md:hidden"
+          >
             Do you want to step into the future before others
           </h1>
 
           <!-- Tablet, desktop version -->
-          <h1 class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text font-extrabold text-2xl hidden sm:block text-center lg:mt-16 xl:text-3xl">
-            Do you want to step into the <br>future before others
+          <h1
+            class="bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-50% text-transparent bg-clip-text font-extrabold text-2xl hidden sm:block text-center lg:mt-16 xl:text-3xl"
+          >
+            Do you want to step into the <br />future before others
           </h1>
 
-          <button type="button" class="text-white py-4 px-4 border-2 mt-10 hover:bg-gradient-to-r from-[#AE67FA] from-0% to-[#F49867] to-90% hover:text-black lg:mb-10">
+          <button
+            type="button"
+            class="text-white w-[200px] py-4 px-4 border-2 mt-10 lg:mb-10 hover:text-[#f19e70] hover:font-medium hover:border-[#f19e70]"
+          >
             Request Early Access
           </button>
         </div>
-       </section>
+      </section>
       <!-- Early access area end -->
     </main>
 
     <!-- footer area start -->
-     <footer class="pt-10 px-10 bg-[#031B34] xl:px-28">
-      <div class="flex flex-col md:flex-row md:justify-evenly pb-5">
-        <!-- brand area start -->
-         <div class="mb-8">
-          <img src="/GPT-3.svg" alt="This is a svg of GPT-3." class="mb-5">
-          <p class="text-esm  text-white">
-            Crechterwoord K12 182 DK <br>Alknjkcb, All Rights Reserved
-          </p>
-         </div>
-        <!-- brand area end -->
+    <footer class="m-0 p-0">
+      <div class="pt-10 px-10 bg-[#031B34] xl:px-28">
+        <div class="flex flex-col md:flex-row md:justify-evenly pb-5">
+          <!-- brand area start -->
+          <div class="mb-8">
+            <img src="/GPT-3.svg" alt="This is a svg of GPT-3." class="mb-5" />
+            <p class="text-esm text-white">
+              Crechterwoord K12 182 DK <br />Alknjkcb, All Rights Reserved
+            </p>
+          </div>
+          <!-- brand area end -->
 
-        <!-- contact info start -->
-         <div class="flex flex-row gap-10">
-          <div class="text-white text-esm">
-            <h2 class="font-medium mb-5">Links</h2>
-            <ul>
-              <li class="pb-5">Overons</li>
-              <li class="pb-5">Social Media</li>
-              <li class="pb-5">Counters</li>
-              <li class="pb-5">Contact</li>
-            </ul>
-           </div>
-  
-           <div class="text-white text-esm">
-            <h2 class="font-medium mb-5">Company</h2>
-            <ul>
-              <li class="pb-5">Terms & Conditions</li>
-              <li class="pb-5">Privacy Policy</li>
-              <li class="pb-5">Contact</li>
-            </ul>
-           </div>
-  
-           <div class="text-white text-esm">
-            <h2 class="font-medium mb-5">Get in touch</h2>
-            <ul>
-              <li class="pb-5">Crechterwoord K12 <br>182 DK Alknjkcb</li>
-              <li class="pb-5">085-132567</li>
-              <li class="pb-5">info@payme.net</li>
-            </ul>
-           </div>
-         </div>
-        <!-- contact info end -->
-      </div>
+          <!-- contact info start -->
+          <div class="flex flex-row gap-10">
+            <div class="text-white text-esm">
+              <h2 class="font-medium mb-5">Links</h2>
+              <ul>
+                <li class="pb-5">Overons</li>
+                <li class="pb-5">Social Media</li>
+                <li class="pb-5">Counters</li>
+                <li class="pb-5">Contact</li>
+              </ul>
+            </div>
+
+            <div class="text-white text-esm">
+              <h2 class="font-medium mb-5">Company</h2>
+              <ul>
+                <li class="pb-5">Terms & Conditions</li>
+                <li class="pb-5">Privacy Policy</li>
+                <li class="pb-5">Contact</li>
+              </ul>
+            </div>
+
+            <div class="text-white text-esm">
+              <h2 class="font-medium mb-5">Get in touch</h2>
+              <ul>
+                <li class="pb-5">Crechterwoord K12 <br />182 DK Alknjkcb</li>
+                <li class="pb-5">085-132567</li>
+                <li class="pb-5">info@payme.net</li>
+              </ul>
+            </div>
+          </div>
+          <!-- contact info end -->
+        </div>
 
         <!-- copyrighr area -->
-        <p class=" text-white text-esm text-center py-5">
+        <p class="text-white text-esm text-center py-5">
           © 2021 GPT-3. All rights reserved.
         </p>
-
-     </footer>
+      </div>
+    </footer>
     <!-- footer area end -->
 
     <script type="module" src="/main.js"></script>
